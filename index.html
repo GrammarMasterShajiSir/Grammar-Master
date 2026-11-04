@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar Master | By Shaji Sir</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#17233b;line-height:1.6}
+header{background:#101e3b;color:white;padding:24px 18px;text-align:center}
+header h1{margin:0;color:#f5c85b;font-size:30px}
+header p{margin:5px}
+nav{background:#172b50;text-align:center;padding:12px}
+nav a{color:white;text-decoration:none;margin:8px;font-weight:bold}
+.hero{background:linear-gradient(135deg,#172b50,#315b91);color:white;text-align:center;padding:65px 20px}
+.hero h2{font-size:34px;margin:0 0 12px}
+.hero strong{color:#f5cf66}
+.btn{display:inline-block;background:#f5c85b;color:#17233b;padding:12px 22px;border-radius:7px;text-decoration:none;font-weight:bold;margin:8px}
+section{padding:35px 18px;max-width:1000px;margin:auto}
+h2.section-title{text-align:center;color:#172b50}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:white;padding:22px;border-radius:12px;box-shadow:0 3px 12px #00000012}
+.card h3{color:#244c7d}
+.practice{text-align:center;background:#e9eff8;border-radius:12px;padding:25px}
+button{border:0;border-radius:7px;padding:11px 18px;margin:6px;background:#203f6b;color:white;font-size:16px}
+#answer{font-weight:bold;margin-top:12px}
+.contact{background:#172b50;color:white;text-align:center;padding:35px 18px}
+.contact a{color:#f5cf66}
+footer{text-align:center;background:#101e3b;color:white;padding:16px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>GRAMMAR MASTER</h1>
+<p>BY SHAJI SIR</p>
+<p>Learn English • Build Confidence • Shine in Life</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#courses">Courses</a>
+<a href="#practice">Practice</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+<h2>Learn English. <strong>Build Confidence.</strong></h2>
+<p>Welcome to Grammar Master – your friendly place to learn English grammar and communication.</p>
+<p>आइए, आसान तरीके से अंग्रेज़ी सीखें और आत्मविश्वास बढ़ाएँ।</p>
+<a class="btn" href="#courses">Explore Courses</a>
+<a class="btn" href="https://wa.me/918294572526">Join Us</a>
+</div>
+
+<section id="courses">
+<h2 class="section-title">Our Learning Programmes</h2>
+<div class="cards">
+<div class="card"><h3>English Grammar</h3><p>Learn grammar rules with simple explanations and easy examples.</p></div>
+<div class="card"><h3>Spoken English</h3><p>Improve daily conversation, vocabulary and speaking confidence.</p></div>
+<div class="card"><h3>School English</h3><p>Special learning support for students from Classes 1 to 10.</p></div>
+<div class="card"><h3>Worksheets & Tests</h3><p>Practise regularly with exercises, questions and answers.</p></div>
+</div>
+</section>
+
+<section id="practice">
+<h2 class="section-title">Try a Grammar Question!</h2>
+<div class="practice">
+<h3>Choose the correct answer:</h3>
+<p>She _____ to school every day.</p>
+<button onclick="check('go')">Go</button>
+<button onclick="check('goes')">Goes</button>
+<button onclick="check('going')">Going</button>
+<p id="answer"></p>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Grammar Master</h2>
+<div class="card">
+<p><strong>Grammar Master – By Shaji Sir</strong> is an English learning initiative designed to make English simple, interesting and practical for every student.</p>
+<p>We focus on grammar, reading, writing, spoken English and regular practice. Lessons are available in English and Hindi.</p>
+<p>Our goal is to help every learner speak and write English with confidence.</p>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Learn With Us Online</h2>
+<div class="card" style="text-align:center">
+<p>Watch educational videos and improve your English step by step.</p>
+<a class="btn" href="https://youtube.com/@mastershajisir?si=ApWEs15AKQs9geSG" target="_blank">Visit Our YouTube Channel</a>
+</div>
+</section>
+
+<div class="contact" id="contact">
+<h2>Join Grammar Master</h2>
+<p>Offline Coaching: Halim Chowk, Kishanganj, Bihar</p>
+<p>Online and offline English learning support.</p>
+<p>WhatsApp: <a href="https://wa.me/918294572526">8294572526</a></p>
+<p><a href="https://youtube.com/@mastershajisir?si=ApWEs15AKQs9geSG">YouTube – Grammar Master</a></p>
+<a class="btn" href="https://wa.me/918294572526?text=Hello%20Shaji%20Sir%2C%20I%20want%20to%20know%20about%20Grammar%20Master%20classes.">Enquire Now</a>
+</div>
+
+<footer>
+<p>© 2026 Grammar Master – By Shaji Sir</p>
+<p>Learn English. Build Confidence.</p>
+</footer>
+
+<script>
+function check(answer){
+document.getElementById("answer").innerText =
+answer === "goes" ? "Correct! Excellent work!" : "Not quite. Try again!";
+}
+</script>
+</body>
+</html>
